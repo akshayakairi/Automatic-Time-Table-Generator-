@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Timetable Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Landing Page -->
+<section id="landingPage" class="hero">
+
+    <div class="hero-content">
+        <h1>📅 Automatic Timetable Generator</h1>
+        <p>Create Smart Timetables Automatically</p>
+
+        <button onclick="showDetails()">
+            Get Started
+        </button>
+    </div>
+
+</section>
+
+<!-- Institution Details -->
+<section id="detailsPage" class="hidden">
+
+    <div class="card">
+
+        <h2>Institution Details</h2>
+
+        <input type="time" id="startTime">
+
+        <input type="time" id="endTime">
+
+        <input type="time" id="lunchStart">
+
+        <input
+            type="number"
+            id="lunchDuration"
+            placeholder="Lunch Duration (minutes)">
+
+        <input
+            type="number"
+            id="periodDuration"
+            placeholder="Period Duration (minutes)">
+
+        <input
+            type="number"
+            id="workingDays"
+            placeholder="Working Days">
+
+        <button onclick="showSubjects()">
+            Next
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Subjects Page -->
+<section id="subjectsPage" class="hidden">
+
+    <div class="card">
+
+        <h2>Add Subjects</h2>
+
+        <input
+            type="text"
+            id="subjectName"
+            placeholder="Subject Name">
+
+        <input
+            type="number"
+            id="subjectCount"
+            placeholder="Classes Per Week">
+
+        <button onclick="addSubject()">
+            Add Subject
+        </button>
+
+        <ul id="subjectList"></ul>
+
+        <button onclick="generateTimetable()">
+            Generate Timetable
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Result -->
+<section id="resultPage" class="hidden">
+
+    <div class="card">
+
+        <h2>Generated Timetable</h2>
+
+        <div id="timetableContainer"></div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
