@@ -11,10 +11,10 @@ Developed a web-based Automatic Timetable Generator that creates class schedules
 
 ## Technologies Used
 
- Python
- HTML
- CSS
- JavaScript
+ * Python
+ * HTML
+ * CSS
+ * JavaScript
 
 ## How to Run
 
