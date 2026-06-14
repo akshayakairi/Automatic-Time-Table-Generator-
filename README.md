@@ -23,7 +23,7 @@ Developed a web-based Automatic Timetable Generator that creates class schedules
 3. Run:
 
 ```bash
-python main.py
+Open index.html in your web browser
 ```
 
 ## Sample Input
