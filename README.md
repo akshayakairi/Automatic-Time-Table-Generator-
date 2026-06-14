@@ -22,9 +22,7 @@ Developed a web-based Automatic Timetable Generator that creates class schedules
 2. Open the project folder.
 3. Run:
 
-```bash
 Open index.html in your web browser
-```
 
 ## Sample Input
 
